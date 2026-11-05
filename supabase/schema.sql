@@ -1,0 +1,5 @@
+create table categories (id uuid primary key default gen_random_uuid(), slug text unique not null, name text not null, image text);
+create table products (id uuid primary key default gen_random_uuid(), slug text unique not null, name text not null, description text, price numeric not null, old_price numeric, rating numeric default 0, category_id uuid references categories(id), images text[] default '{}', stock int default 0);
+create table customers (id uuid primary key references auth.users(id), name text, phone text, governorate text, address text);
+create table orders (id uuid primary key default gen_random_uuid(), customer_id uuid references customers(id), items jsonb not null, total numeric not null, payment text check (payment in ('cod','paymob')), status text default 'new', created_at timestamptz default now());
+create table reviews (id uuid primary key default gen_random_uuid(), product_id uuid references products(id), name text, rating int check (rating between 1 and 5), body text);
