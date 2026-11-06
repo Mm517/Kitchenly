@@ -1,0 +1,7 @@
+.cart-page { display: grid; grid-template-columns: 1fr 340px; gap: var(--sp-4); align-items: start; }
+.cart-page .line { grid-template-columns: 80px 1fr auto auto; box-shadow: var(--shadow-1); }
+.summary { background: #fff; border-radius: var(--r-md); padding: var(--sp-4); box-shadow: var(--shadow-1); display: grid; gap: .8rem; position: sticky; top: 90px; }
+.summary div { display: flex; justify-content: space-between; }
+.summary .total { font-weight: 900; font-size: 1.2rem; border-top: 1px solid var(--c-line); padding-top: .8rem; }
+.summary input { padding: .6rem 1rem; border: 1px solid var(--c-line); border-radius: var(--r-md); width: 100%; }
+.page-title { margin-bottom: var(--sp-3); }

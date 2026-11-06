@@ -1,0 +1,9 @@
+.page-hero { background: linear-gradient(120deg, var(--c-primary-soft), var(--c-bg)); padding-block: var(--sp-5); }
+.shop { display: grid; grid-template-columns: 240px 1fr; gap: var(--sp-4); align-items: start; }
+.filters { background: #fff; border-radius: var(--r-md); padding: var(--sp-3); box-shadow: var(--shadow-1); position: sticky; top: 90px; display: grid; gap: var(--sp-3); }
+.filters h3 { font-size: 1rem; }
+.filters label { display: flex; gap: .5rem; align-items: center; cursor: pointer; padding-block: .15rem; }
+.filters input[type="range"] { width: 100%; accent-color: var(--c-primary); }
+.sortbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--sp-3); }
+.sortbar select { padding: .4rem .8rem; border-radius: var(--r-pill); border: 1px solid var(--c-line); background: #fff; }
+.shop .grid-3 { grid-template-columns: repeat(3, 1fr); }

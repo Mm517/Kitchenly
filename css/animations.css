@@ -1,0 +1,5 @@
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+.reveal.in { opacity: 1; transform: none; }
+@keyframes float { 50% { transform: translateY(-12px); } }
+.float { animation: float 4s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } .float { animation: none; } }

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>السلة | KITCHENLY</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800;900&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages/cart.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main class="container section">
+  <h1 class="page-title">سلة التسوق</h1>
+  <div class="cart-page">
+    <div class="grid" id="lines"></div>
+    <aside class="summary">
+      <div><span>المجموع الفرعي</span><span id="sub"></span></div>
+      <div><span>الخصم</span><span id="off"></span></div>
+      <div><span>الشحن</span><span id="ship"></span></div>
+      <div class="total"><span>الإجمالي</span><span id="total"></span></div>
+      <input id="code" placeholder="كود الخصم (KITCHEN10)" aria-label="كود الخصم">
+      <button class="btn btn-ghost btn-block" id="apply">تطبيق الكود</button>
+      <button class="btn btn-block" id="checkout">إتمام الطلب ←</button>
+    </aside>
+  </div>
+</main>
+<div id="site-footer"></div>
+<script type="module" src="js/pages/cart.js"></script>
+</body>
+</html>

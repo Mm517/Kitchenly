@@ -1,0 +1,8 @@
+.crumbs { color: var(--c-muted); font-size: .9rem; padding-block: var(--sp-3); }
+.detail { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-5); align-items: start; }
+.detail-img { aspect-ratio: 1; border-radius: var(--r-lg); display: grid; place-items: center; font-size: 10rem; background: linear-gradient(135deg, var(--c-primary-soft), var(--c-soft)); box-shadow: var(--shadow-1); }
+.detail h1 { font-size: 2rem; }
+.detail .price { font-size: 2rem; margin-block: var(--sp-2); }
+.detail ul { list-style: none; padding: 0; display: grid; gap: .4rem; margin-block: var(--sp-3); }
+.detail li::before { content: "✓"; color: var(--c-primary); font-weight: 900; margin-inline-end: .5rem; }
+.buy { display: flex; gap: var(--sp-3); align-items: center; flex-wrap: wrap; }

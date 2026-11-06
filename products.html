@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>المنتجات | KITCHENLY</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800;900&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages/products.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main>
+  <section class="page-hero"><div class="container"><h1>جميع المنتجات</h1><p>اكتشف مجموعة منتجاتنا المميزة</p></div></section>
+  <section class="section"><div class="container shop">
+    <aside class="filters">
+      <div><h3>التصنيفات</h3><div id="cat-list"></div></div>
+      <div><h3>السعر: حتى <span id="price-val">500</span> جنيه</h3><input type="range" id="price" min="50" max="500" step="10" value="500" aria-label="أقصى سعر"></div>
+    </aside>
+    <div>
+      <div class="sortbar"><span id="count"></span>
+        <select id="sort" aria-label="ترتيب"><option value="def">الترتيب الافتراضي</option><option value="low">الأقل سعراً</option><option value="high">الأعلى سعراً</option></select></div>
+      <div class="grid grid-3" id="grid"></div>
+    </div>
+  </div></section>
+</main>
+<div id="site-footer"></div>
+<script type="module" src="js/pages/products.js"></script>
+</body>
+</html>

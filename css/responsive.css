@@ -1,0 +1,17 @@
+@media (max-width: 980px) {
+  .grid-4, .features { grid-template-columns: repeat(2, 1fr); }
+  .grid-5, .cats { grid-template-columns: repeat(3, 1fr); }
+  .shop, .cart-page, .detail, .hero .container, .footer .container { grid-template-columns: 1fr; }
+  .shop .grid-3, .reviews { grid-template-columns: repeat(2, 1fr); }
+  .filters, .summary { position: static; }
+  .nav { display: none; }
+  .promo { flex-direction: column; text-align: center; }
+}
+@media (max-width: 560px) {
+  .grid-4, .grid-5, .shop .grid-3, .reviews, .features { grid-template-columns: repeat(2, 1fr); }
+  .reviews { grid-template-columns: 1fr; }
+  .cats { grid-template-columns: repeat(2, 1fr); }
+  .topbar .container span:last-child { display: none; }
+  .search { display: none; }
+  .cart-page .line { grid-template-columns: 56px 1fr; }
+}

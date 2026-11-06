@@ -1,0 +1,21 @@
+.hero { background: radial-gradient(circle at 20% 30%, #e6f1d3, var(--c-bg) 70%); }
+.hero .container { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: var(--sp-5); padding-block: var(--sp-6); }
+.hero h1 { font-size: clamp(2rem, 5vw, 3.4rem); }
+.hero p { color: var(--c-muted); font-size: 1.15rem; margin-block: var(--sp-3) var(--sp-4); }
+.hero-art { font-size: clamp(7rem, 18vw, 12rem); text-align: center; filter: drop-shadow(0 20px 30px rgb(31 90 42 / .25)); }
+.perks { display: flex; gap: var(--sp-4); margin-top: var(--sp-4); flex-wrap: wrap; font-weight: 700; color: var(--c-primary); font-size: .9rem; }
+.cats { grid-template-columns: repeat(6, 1fr); }
+.cat { text-align: center; padding: var(--sp-3); font-weight: 800; background: #fff; border-radius: var(--r-md); box-shadow: var(--shadow-1); transition: transform var(--dur) var(--ease); }
+.cat:hover { transform: translateY(-4px); }
+.cat i { display: grid; place-items: center; width: 64px; height: 64px; margin: 0 auto .5rem; border-radius: 50%; background: var(--c-primary-soft); font-style: normal; font-size: 1.8rem; }
+.promo { background: linear-gradient(120deg, var(--c-primary-dark), var(--c-primary)); color: #fff; border-radius: var(--r-lg); padding: var(--sp-5); display: flex; justify-content: space-between; align-items: center; gap: var(--sp-3); }
+.promo h2 { color: #fff; font-size: 2rem; }
+.features { grid-template-columns: repeat(4, 1fr); }
+.feature { text-align: center; padding: var(--sp-4); background: #fff; border-radius: var(--r-md); box-shadow: var(--shadow-1); }
+.feature i { font-style: normal; font-size: 2rem; }
+.reviews { grid-template-columns: repeat(3, 1fr); }
+.review { background: #fff; padding: var(--sp-4); border-radius: var(--r-md); box-shadow: var(--shadow-1); }
+.news { background: var(--c-primary-dark); color: #fff; text-align: center; border-radius: var(--r-lg); padding: var(--sp-5); }
+.news h2 { color: #fff; }
+.news-row { display: flex; max-width: 460px; margin: var(--sp-3) auto 0; background: #fff; border-radius: var(--r-pill); padding: 4px; }
+.news input { flex: 1; border: 0; padding-inline: 1rem; background: none; color: var(--c-text); min-width: 0; }

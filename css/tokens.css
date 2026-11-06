@@ -1,0 +1,12 @@
+:root {
+  --c-bg: #fbf8ef; --c-surface: #ffffff; --c-soft: #f1f4e6;
+  --c-text: #1c2b1f; --c-muted: #6b7a6c; --c-line: #e6e8d8;
+  --c-primary: #1f5a2a; --c-primary-dark: #14391d; --c-primary-soft: #e3efd9;
+  --c-accent: #f5c518; --c-danger: #c0392b;
+  --font-body: "Cairo", "Tajawal", system-ui, sans-serif;
+  --sp-1: .25rem; --sp-2: .5rem; --sp-3: 1rem; --sp-4: 1.5rem; --sp-5: 2.5rem; --sp-6: 4rem;
+  --r-sm: 8px; --r-md: 14px; --r-lg: 24px; --r-pill: 999px;
+  --shadow-1: 0 6px 20px rgb(31 90 42 / .08); --shadow-2: 0 14px 34px rgb(31 90 42 / .16);
+  --dur: .3s; --ease: cubic-bezier(.2, .8, .2, 1);
+  --z-nav: 100; --z-drawer: 1000; --z-toast: 1100;
+}
